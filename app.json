@@ -1,0 +1,18 @@
+{
+  "name": "XTECH-XD Pair",
+  "description": "XTECH-XD WhatsApp Pairing System",
+  "logo": "https://i.ibb.co/nqsRcKDB/Xploader4.jpg",
+  "keywords": ["whatsapp", "pair", "bot"],
+  "repository": "https://github.com/xtechKe2/pairing-bot-and-web-in-1",
+  "stack": "container",
+  "addons": [],
+  "scripts": { "start": "node index.js" },
+  "env": {
+    "TELEGRAM_BOT_TOKEN": { "description": "Telegram Bot Token", "value": "", "required": true },
+    "CF_TUNNEL_TOKEN": { "description": "Cloudflare Tunnel Token", "value": "", "required": false },
+    "PORT": { "description": "Port", "value": "10000", "required": false }
+  },
+  "buildpacks": [
+    { "url": "heroku/nodejs" }
+  ]
+}
